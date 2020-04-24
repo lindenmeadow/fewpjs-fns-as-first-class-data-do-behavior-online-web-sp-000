@@ -14,12 +14,12 @@ function greet(d) {
   d = new Date();
   const h = d.getHours();
   if (h < 12) {
-    str = "Good Morning";
+    return "Good Morning";
   }
   if (h < 17) {
-    str = "Good Afternoon";
+    return "Good Afternoon";
   } else {
-    str = "Good Evening";
+    return "Good Evening";
   }
 }
 /* Write your implementation of displayMessage() */

@@ -16,7 +16,7 @@ function greet(str) {
   if (h < 12) {
     str = "Good Morning";
   }
-  if (h > 12 && h <= 17) {
+  if (h > 12 && h < 17) {
     str = "Good Afternoon";
   } else {
     str = "Good Evening";

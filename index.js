@@ -10,17 +10,15 @@ function handleClick(e) {
 /* End Given Code, don't edit above here...*/
 
 /* Write your implementation of greet() */
-function greet(d) {
-  d = new Date();
-  const h = d.getHours();
-  if (h < 12) {
-    return "Good Morning";
-  } else if (h < 17) {
-    return "Good Afternoon";
-  } else {
-    return "Good Evening";
-  }
-}
+function greet(timeString) {
+  const time = parseInt(timeString)
+  if (time < 12)
+    return "Good Morning"
+  else if (time >= 12 && time <= 17)
+    return "Good Afternoon"
+  else if (time > 17)
+    return "Good Evening"
+};
 /* Write your implementation of displayMessage() */
 function displayMessage(message) {
   document.getElementById('greeting').innerHTML = message;

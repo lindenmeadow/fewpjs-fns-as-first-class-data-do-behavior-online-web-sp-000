@@ -15,8 +15,7 @@ function greet(d) {
   const h = d.getHours();
   if (h < 12) {
     return "Good Morning";
-  }
-  if (h < 17) {
+  } else if (h < 17) {
     return "Good Afternoon";
   } else {
     return "Good Evening";

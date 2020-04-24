@@ -13,7 +13,7 @@ function handleClick(e) {
 function greet(str) {
   const d = new Date();
   const h = d.getHours();
-  if (h >= 0 && h < 12) {
+  if (h < 12) {
     str = "Good Morning";
   }
   if (h > 12 && h <= 17) {
